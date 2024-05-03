@@ -1,0 +1,303 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+    color: #222831;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* button */
+.btn {
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+
+/* title */
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* logo dan navbar */
+.nav {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar {
+    background-color: #EEF5FF;
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.logo a {
+    color: #222831;
+}
+
+nav ul li a {
+    color: #222831;
+    position: center;
+}
+
+/* beranda section */
+#beranda {
+    padding: 6rem;
+    height: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.beranda-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+    color: #222831;
+}
+
+.beranda-left img {
+    width: 250px;
+    border-radius: 0.7rem;
+}
+
+.beranda-left {
+    display: flex;
+    justify-content: center;
+}
+
+
+section {
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+}
+
+
+/* tentangsaya-section */
+#tentangsaya {
+    background-color: #EEF5FF;
+    padding: 6rem 0;
+}
+
+.section-title-tentangsaya {
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.tentangsaya {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #406882;
+    border-radius: 0.7rem;
+}
+
+.tentangsaya h4 {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.tentangsaya p {
+    color: white;
+}
+
+.tentangsaya-icon {
+    background-color: #EEF5FF;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+/* Keahlian-section */
+#keahlian {
+    padding: 6rem 0;
+    background: white;
+    height: 1000px;
+}
+
+.section-title-keahlian {
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+.keahlian-grid {
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   gap: 10rem;
+}
+
+.pengalaman {
+    display: flex;
+    gap : 2rem;
+}
+
+.pengalaman line {
+    padding: 0 0.7rem;
+}
+
+.pengalaman .line div{
+    width: 2px;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+.pengalaman-info {
+    margin: 0.3rem 0;
+}
+
+.pengalaman-date {
+    margin-bottom: 3rem;
+}
+
+.pengalaman .line div::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.keahlian-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.keahlian-right {
+    line-height: 2rem;
+    padding: 1rem;
+}
+
+
+/* Kontak Section*/
+#kontak {
+    padding: 6rem;
+    background-color: #EEF5FF;
+}
+
+.kontak-form div {
+    margin-bottom: 1rem;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    resize: none;
+}
+
+.kontak-form input::placeholder,
+.kontak-form textarea::placeholder {
+    color: black;
+}
+
+.kontak-form input:focus,
+.kontak-form textarea:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+.btn-kirim {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #12486B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-kirim:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Footer */
+footer {
+    margin-bottom: 0;
+    padding: 2rem 0;
+    background: #607274;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+    fill: black;
+}
+
+.footer-icons {
+    fill: gray;
+}
